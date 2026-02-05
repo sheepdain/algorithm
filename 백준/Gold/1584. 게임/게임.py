@@ -43,6 +43,6 @@ while heap:
                     break
                 game_map[nx][ny] = 2
                 heapq.heappush(heap, (curr_life + map_life, nx, ny))
-    if result != -1:
+    if result != -1: # break가 어디서 되는 지 확인하기!!
         break
 print(result)
